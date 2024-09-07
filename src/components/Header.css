@@ -1,0 +1,90 @@
+/* Header.css */
+
+/* General styles for the header */
+.header {
+    background: linear-gradient(135deg, #4CAF50, #2C6B3F); /* Gradient background */
+    color: white; /* White text */
+    padding: 15px   px; /* Increased padding for a more spacious look */
+    display: flex; /* Flexbox for aligning items */
+    justify-content: space-between; /* Space between the logo and nav */
+    align-items: center; /* Center items vertically */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for a classy effect */
+    border-bottom: 2px solid #3A5B40; /* Bottom border to add definition */
+    transition: background 0.3s ease, opacity 0.3s ease; /* Smooth background and opacity transition */
+    position: -webkit-sticky; /* For Safari */
+    position: sticky; /* Stick the header */
+    top: 0; /* Stick to the top */
+    z-index: 1000; /* Ensure it stays above other content */
+}
+
+.header.fading {
+    opacity: 0.8; /* Fade effect on scroll */
+}
+
+.header:hover {
+    background: linear-gradient(135deg, #3A5B40, #2C6B3F); /* Darker gradient on hover */
+}
+
+.logo {
+    font-size: 1.8rem; /* Larger font size for the logo */
+    font-weight: bold; /* Bold text */
+    text-transform: uppercase; /* Capitalize all letters */
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set logo color */
+    transition: color 0.3s ease; /* Smooth color transition */
+    display: flex; /* Center logo vertically */
+    align-items: center; /* Align items vertically */
+}
+
+.logo img {
+    width: 50px; /* Adjust logo size */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Space between logo image and text */
+}
+
+nav {
+    display: flex; /* Horizontal layout for nav links */
+    gap: 20px; /* Increased space between links */
+}
+
+nav ul {
+    list-style: none; /* Remove bullets from list */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+    display: flex; /* Flex layout for list items */
+    gap: 30px; /* Set uniform gap between links */
+}
+
+nav li {
+    margin: 0; /* Remove margin from list items */
+}
+
+nav a {
+    color: white; /* White text for nav links */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.1rem; /* Slightly larger font size for links */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and transform transitions */
+}
+
+nav a:hover {
+    color: #FFD700; /* Gold color on hover */
+    transform: scale(1.05); /* Slightly enlarge link on hover */
+}
+
+nav a:active {
+    color: #FFB800; /* Darker gold when active */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column; /* Stack items vertically on mobile */
+        text-align: center; /* Center text */
+        padding: 10px 20px; /* Adjust padding for mobile */
+    }
+
+    nav {
+        flex-direction: column; /* Stack links vertically */
+        gap: 15px; /* Adjust gap on mobile */
+    }
+}

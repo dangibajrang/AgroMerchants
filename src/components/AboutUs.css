@@ -1,0 +1,92 @@
+/* General styles for the About Us section */
+.about-us-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Intro section styling */
+.about-us-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.about-us-intro h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-us-intro p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Stats section styling */
+.about-us-stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.about-us-stats ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1.2rem;
+}
+
+.about-us-stats li {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Empowering Farmers & Buyers section */
+.empowering-farmers-buyers {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Flexbox for content and images */
+.empowering-section {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.empowering-section img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.empowering-content {
+    flex: 1;
+}
+
+.empowering-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.empowering-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* For swapping content and image in "Empowering Buyers" */
+.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .empowering-section {
+        flex-direction: column;
+    }
+
+    .reverse {
+        flex-direction: column;
+    }
+}
